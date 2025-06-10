@@ -1,0 +1,47 @@
+# Encoding: UTF-8.
+###############################################################################
+## LABORATORIO METODOLOGIA DELLA RICERCA SOCIALE ##
+################################## Compito 2 ##################################
+###############################################################################
+
+# da consegnare a tamara.grechanaya@unimi.it entro il 11/06/2025 (10.30 am)
+# allegare alla mail il file sintassi "Cognome_Compito 2" (NON inviare file dati).
+# nel file sintassi inserire un breve commento per introdurre il comando che si sta eseguendo e, quando richiesto, commentare i risultati derivanti dalle analisi.
+
+
+### Esercizio 1 ###
+
+# 1- Aprire il File Dati "Laureati 2004-ind 2007_compito 2".
+# 2- A partire dalla classe sociale del padre (classe_p) e della madre (classe_m), creare una variabile "Classe sociale di origine" a tre categorie: 
+#            1) Borghesia; 2) Classe media; 3) Classe operaia.
+#     La nuova variabile avrà il valore della classe sociale del padre ad eccezione dei casi in cui la classe sociale del padre ha valore missing; in quest'ultimo caso, avrà il valore della 
+#     classe sociale della madre.
+# 3- Dopo aver controllato la correttezza della procedura, svolgere l'opportuna analisi monovariata della nuova variabile e commentare 
+#     i risultati.
+# 4- Creare tante variabili dummy quante sono le categorie della nuova variabile e controllare che il procedimento sia corretto.
+
+### Esercizio 2 ###
+
+# 1- Analizzare, con le tecniche opportune, la relazione bivariata tra:
+#        a) classe sociale di origine e reddito (redd_cat);
+#        b) ripartizione geografica di residenza (rip_geo) e reddito (redd_per);
+#        c) laurea fuori corso (Q1_19) e reddito (redd_per);
+#        d) classe sociale di origine e laurea fuori corso (Q1_19).
+# 2- Specificare, per ciascuna relazione, quale è la variabile indipendente e quale la dipendente e commentare i risultati delle analisi.
+
+### Esercizio 3 ###
+
+# 1- Stimare, attraverso un modello di regressione lineare, l'effetto della classe sociale di origine sul reddito e commentare i risultati (intensità dell'effetto, significatività statistica e bontà 
+#     del modello).
+# 2- Stimare un secondo modello di regressione lineare, dove l'effetto della classe sociale di origine sul reddito è "controllato" per la ripartizione geografica di residenza e commentare
+#     i risultati.
+# 3- Stimare un terzo modello di regressione lineare, dove l'effetto della classe sociale di origine sul reddito è "controllato" non solo per la ripartizione geografica di residenza, ma anche
+#     per laurea fuori corso, e commentare i risultati.
+
+
+
+###Nota per gli studenti:
+#Quando diciamo che un effetto è "controllato per" una variabile, significa che includiamo quella variabile come variabile indipendente nel modello, proprio come abbiamo fatto nella lezione del 5 giugno 2025.
+
+#In pratica:
+#"Controllare per la ripartizione geografica" = aggiungere la zona geografica come variabile nel modello
