@@ -1,0 +1,65 @@
+# Encoding: UTF-8.
+###########################################################################
+## LABORATORIO METODOLOGIA DELLA RICERCA SOCIALE ##
+############################### Esame ############################### 
+###########################################################################
+
+################## Istruzioni ################## 
+# Avete 1.5 ore di tempo (10:30 - 12:00).
+# Durante l'esame dovete tenere la telecamera accesa.
+# Potete utilizzare le slide e i file di sintassi del laboratorio.
+
+# Il dataset si trova in: General -> Prova_finale -> dataset_esame.dta.
+# Da inviare per email a tamara.grechanaya@unimi.it entro le 12:00 PM.
+# Allegare alla email il file di sintassi "Cognome_Esame" (NON inviare file di dati).
+# Nel file di sintassi, quando richiesto, dovete commentare i risultati derivanti dalle analisi (non è sufficiente scrivere solo il codice senza commenti).
+
+# Per ottenere il punto extra, dovete rispondere correttamente ad almeno il 50% dell'esame (cioè ottenere almeno 2,5 punti - tra parentesi è indicato il punteggio di ogni esercizio).
+##################################################
+
+
+
+### Esercizio 1 ### (tot: 0.35 punto)
+# 1(0.05 punto) - Aprire il file dati "dataset_esame.dta".
+# 2 (0.1 punto) - Rinominare la variabile Q5_1 (Cittadinanza italiana) in "CITTADIN".
+# 3 (0.1 punto) - Creare la variabile "CITTADIN_new" basata sulla variabile "CITTADIN", trasformando le modalità corrispondenti come segue:
+        1(no) -> 0
+        2(si) -> 1
+# 4 (0.1 punto) - Visualizzare la distribuzione e i valori mancanti delle seguenti variabili attraverso una tabella di frequenza: "CITTADIN_new", "Q4_5", "prof_P" 
+
+
+### Esercizio 2 ### (tot: 0.6 punto)
+# 1 (0.2 punto) - Eseguire l'analisi monovariata appropriata della variabile Q1_18 (Lavori durante gli studi) e commentare i risultati.
+# 2 (0.1 punto) - Visualizzare l'analisi monovariata della variabile Q1_18 tramite il grafico appropriato.
+# 3 (0.2 punto) - Eseguire l'analisi monovariata appropriata della variabile Q1_22 (Voto di laurea) e commentare i risultati.
+# 4 (0.1 punto) - Visualizzare l'analisi monovariata della variabile Q1_22 tramite il grafico appropriato.
+
+
+### Esercizio 3 ### (tot: 0.55 punto)
+# 1 (0.15 punto) - Ricodifica della variabile $prof_P (Professione padre) in una nuova variabile ("p_lavoro") con tre categorie (La nuova variabile a 3 categorie rifletterebbe il livello di qualificazione e reddito atteso dee genitori):
+	- Alto (1 - Legislatori, dirigenti e imprenditori; 2-Professioni intellettuali, scientifiche e di elevata specializzazione); 
+	- Medio (3- Professioni intermedie (tecnici); 4- Professioni esecutive relative all'amministrazione e gestione; 5- Professioni relative alle vendite ed ai servizi per le famiglie; 6- Artigiani, operai specializzati e agricoltori); 
+	- Basso (7- Conduttori di impianti, operatori di macchinari fissi e mobili e operai di montaggio industriale; 8- Personale non Qualificato).
+# 2 (0.1 punto) - Verificare se la ricodifica è stata effettuata correttamente
+# 3 (0.15 punto) -  Utilizzando la nuova variabile "p_lavoro" e la variabile "Q4_5" (tipo di lavoro del padre: dipendente o autonomo), creare una nuova variabile "p_l_tipo" con le seguenti categorie: "alto_autonomo", "alto_dipendente", "medio_autonomo", "medio_dipendente", "basso_autonomo", "basso_dipendente".
+# 4 (0.15 punto) - Creare tante variabili dummy quante sono le categorie della nuova variabile e controllare che il procedimento sia corretto. 
+
+
+
+### Esercizio 4 ###(tot: 1.5 punto)
+
+# 1 (0.5 punto) - Analizzare la relazione tra il genere ($genere) e voto di laurea a categorie ($voto_cat), utilizzando la tecnica di analisi bivariata opportuna. Commentate i risultati
+# !!! Genere: 1-Maschio, 2-Femmina
+# 2 (0.5 punto) - Analizzare la relazione tra il redito percipito($redd_per) e voto di laurea ($Q1_22), utilizzando la tecnica di analisi bivariata opportuna. Commentate i risultati
+# 3 (0.5 punto) - Analizzare la relazione tra il redito percipito($redd_per) e cittadinanza ($CITTADIN_new), utilizzando la tecnica di analisi bivariata opportuna. Commentate i risultati
+
+
+### Esercizio 5 ### (tot: 2 punti)
+1 (0.4 punto)- Stimare, attraverso un modello di regressione lineare, l'effetto del voto di laurea a categorie($voto_cat) sul reddito($redd_per).
+2 (0.5 punto)- Commentare i risultati e il potere predittivo del modello.
+
+3 (0.5 punto)- Stimare, attraverso un modello di regressione lineare, l'effetto del voto di laurea a categorie($voto_cat) sul reddito($redd_per), controllando per il tipo di lavoro del papa(p_l_tipo), Lavori durante gli studi(Q1_18) e cittadinanza(CITTADIN_new).
+# !!! Ragionate bene su come dovete trattare (e se necessario, trasformare) la variabile "Lavori durante gli studi (Q1_18)" prima di effettuare la regressione nell'esercizio 5.3.
+4 (0.6 punto)- Commentare i risultati e il potere predittivo del modello.
+#####################################
+
